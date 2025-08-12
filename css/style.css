@@ -238,12 +238,22 @@ span {
   margin: 120px auto;
   position: relative;
 }
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .part-two-socials {
   position: absolute;
   width: 119.6px;
   height: 138px;
   top: 351px;
   left: 530px;
+  animation: rotate 8s linear infinite;
 }
 .part-two-text {
   display: flex;
